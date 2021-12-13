@@ -7,8 +7,10 @@ services:
       - /var/lib/postgresql/data/
     env_file:
       - ./.env
+
   web:
-    build: ../api_yamdb
+    image: shtrihh88/api_yamdb_final:latest
+    build: .
     restart: always
     volumes:
       - static_value:/app/static/
@@ -22,7 +24,6 @@ services:
     image: nginx:1.21.3-alpine
     ports:
       - "80:80"
-
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - static_value:/var/html/static/
