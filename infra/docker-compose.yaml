@@ -10,7 +10,6 @@ services:
 
   web:
     image: shtrihh88/api_yamdb_final:latest
-    build: .
     restart: always
     volumes:
       - static_value:/app/static/
