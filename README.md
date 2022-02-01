@@ -1,7 +1,6 @@
-# yamdb_final
+# REST API Yamdb
 
 ***
-## Развёрнутый и запущенный проект можно посмотреть по адресу http://51.250.23.112/api/v1
 ![example workflow](https://github.com/shtrihh88/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ***
